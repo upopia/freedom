@@ -35,11 +35,14 @@ subprojects {
     targetCompatibility = 1.8
 
     dependencies {
-// https://mvnrepository.com/artifact/org.springframework.boot/spring-boot-starter-web
-        compile group: 'org.springframework.boot', name: 'spring-boot-starter-web', version: '2.3.1.RELEASE'
-// https://mvnrepository.com/artifact/org.springframework.boot/spring-boot-starter-test
-        testCompile group: 'org.springframework.boot', name: 'spring-boot-starter-test', version: '2.3.1.RELEASE'
-
-        testCompile group: 'junit', name: 'junit', version: '4.12'
+        compile group: 'org.springframework.boot', name: 'spring-boot-starter-web', version: '2.2.1.RELEASE'
+        //lombok
+        compileOnly 'org.projectlombok:lombok:1.18.8'
+        //整合 aop
+//        compile 'org.springframework.boot:spring-boot-starter-aop'
+        //整合 actuator
+//        compile 'org.springframework.boot:spring-boot-starter-actuator'
+        testCompile group: 'org.springframework.boot', name: 'spring-boot-starter-test', version: '2.2.1.RELEASE'
+//        testCompile group: 'junit', name: 'junit', version: '4.12'
     }
 }

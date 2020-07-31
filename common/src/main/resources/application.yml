@@ -1,0 +1,8 @@
+
+server:
+  servlet:
+    context-path: /freedom/common
+  port: 10000
+spring:
+  freemarker:
+    charset: UTF-8

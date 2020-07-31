@@ -7,6 +7,13 @@ repositories {
     mavenCentral()
 }
 
+
 dependencies {
+    compile "org.springframework.cloud:spring-cloud-dependencies:Hoxton.RELEASE"
+    runtime group: 'org.springframework.cloud', name: 'spring-cloud-dependencies', version: 'Hoxton.RELEASE', ext: 'pom'
+
+    compile group: 'com.alibaba.cloud', name: 'spring-cloud-starter-alibaba-nacos-config', version: '2.2.1.RELEASE'
+    compile group: 'com.alibaba.cloud', name: 'spring-cloud-starter-alibaba-nacos-discovery', version: '2.2.1.RELEASE'
+
     testCompile group: 'junit', name: 'junit', version: '4.12'
 }
