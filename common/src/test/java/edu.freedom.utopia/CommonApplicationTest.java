@@ -18,6 +18,10 @@ public class CommonApplicationTest {
     @Test
     public void test(){
         System.out.println("测试redis工具");
+    }
+    @Test
+    public void redisTest(){
+        System.out.println("测试redis工具");
 
     }
 

@@ -34,15 +34,18 @@ subprojects {
     sourceCompatibility = 1.8
     targetCompatibility = 1.8
 
+
     dependencies {
+        compile group: 'org.springframework.boot', name: 'spring-boot-starter-parent', version: '2.2.1.RELEASE'
         compile group: 'org.springframework.boot', name: 'spring-boot-starter-web', version: '2.2.1.RELEASE'
         //lombok
-        compileOnly 'org.projectlombok:lombok:1.18.8'
+        compile group: 'org.projectlombok', name: 'lombok', version: '1.16.22'
+
         //整合 aop
 //        compile 'org.springframework.boot:spring-boot-starter-aop'
         //整合 actuator
 //        compile 'org.springframework.boot:spring-boot-starter-actuator'
         testCompile group: 'org.springframework.boot', name: 'spring-boot-starter-test', version: '2.2.1.RELEASE'
-//        testCompile group: 'junit', name: 'junit', version: '4.12'
+        testCompile group: 'junit', name: 'junit', version: '4.12'
     }
 }

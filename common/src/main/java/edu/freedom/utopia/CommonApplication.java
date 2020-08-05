@@ -1,10 +1,9 @@
 package edu.freedom.utopia;
 
 import org.springframework.boot.SpringApplication;
-import org.springframework.boot.autoconfigure.EnableAutoConfiguration;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.scheduling.annotation.EnableScheduling;
 import org.springframework.transaction.annotation.EnableTransactionManagement;
-import org.springframework.transaction.annotation.Transactional;
 
 /**
  * @Description 公共模块启动类（测试时候使用，将来删除）
@@ -14,6 +13,7 @@ import org.springframework.transaction.annotation.Transactional;
 
 @EnableTransactionManagement
 @SpringBootApplication
+@EnableScheduling
 public class CommonApplication {
     public static void main(String[] args){
         SpringApplication.run(CommonApplication.class);
