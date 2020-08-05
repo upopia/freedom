@@ -21,12 +21,14 @@ public class User {
     private Long id;
     @Column //这是和数据表对应的一个列
     private String username;
-
     @Column
     private String sex;
-
+    @Column
+    private Integer age;
     @Column
     private String password;
+    @Column
+    private String remark;
 
 
 }
