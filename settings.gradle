@@ -1,4 +1,5 @@
 rootProject.name = 'Utopia'
 include 'common'
 include 'registration_nacos'
+include 'base'
 
